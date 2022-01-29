@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Rating System</title>
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="bank">
+            <nav>
+                <img src="images/menu.png" class="menu-img">
+                <img src="images/logo.png" class="logo">
+                
+                <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            </nav>
+            <div class="lamp-container">
+                <img src="images/lamp.png"class="lamp">
+                <img src="images/light.png"class="light" id="light">
+        </div>
+        <div class ="text-container">
+            <h1>ORDER BOOK SYSTEM <br> DBS</h1>
+            <p><ul>DBS Bank Limited is a Singaporean multinational banking and financial services corporation headquartered at the Marina Bay Financial Centre in the Marina Bay district of Singapore. </ul>
+            </p>
+            <a href="file:///C:/Users/CHUKKA%20KEERTHI/Desktop/ADMIN/A1.html">CLICK HERE</a>
+            <div class="control">
+                <p>04</p>
+            <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+        <script>
+            var btn = document.getElementById("btn");
+            var light = document.getElementById("light");
+
+            function toggleBtn(){
+                btn.classList.toggle("active");
+                light.classList.toggle("on")}
+        </script>    
+
+    </body> 
+    </html>   
