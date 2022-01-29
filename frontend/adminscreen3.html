@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Screen3</title>
+
+    <link rel="stylesheet" href="C:\Users\NIKIT\Documents\styles.css">
+    <link rel="icon" href="https://www.kindpng.com/picc/m/2-24034_dbs-bank-logo-dbs-bank-logo-png-transparent.png">
+
+   
+</head>
+<center>
+    <body>
+
+     <h1>ORDER BOOKING SYSTEM</h1>
+
+     <img src="https://thumbs.dreamstime.com/b/stock-market-rise-blue-arrow-faded-candlestick-charts-winning-success-emotion-happiness-rising-116853042.jpg" width="200px" height="200px" alt="stockimage">
+     <br>
+
+      <button>Open Market</button>
+      <input type="button" name="Closed Market"  value="Closed Market">
+      <input type="button" name="Show Orders"  value="Show Orders">
+     
+      
+
+     <form action="/action_page.php"><br>
+         <label for="Stocks">Choose a stock:</label>
+         <select name="stocks" id="stocks">
+           <option value="DBS">DBS</option>
+         </select>
+         <br><br>
+     </form>
+
+     <label>Choose fromdate:
+        <input type="date" name="date" min="2022-01-29" max="2022-04-30">
+      </label><br><br>
+
+      <label>Choose Todate:
+        <input type="date" name="date" min="2022-01-29" max="2022-04-30">
+      </label>
+
+      <table  class="center">
+
+       <th>S.NO</th>
+       <th>Stock name</th>
+       <th>orderQty</th>
+       <th>Ordertype</th>
+       <th>ExecuteQty</th>
+       <th>Price</th>
+       <th>Orderstatus</th>
+       <th>Orderdata</th>
+
+       <tr>
+        <td>1</td>
+        <td>DBS</td>
+        <td>50</td>
+        <td>limit</td>
+        <td>50</td>
+        <td>150</td>
+        <td>Executed</td>
+        <td>21 Feb 2021</td>
+       </tr>
+
+      <tr>
+        <td>2</td>
+        <td>DBS</td>
+        <td>50</td>
+        <td>market</td>
+        <td>50</td>
+        <td> </td>
+        <td>Executed</td>
+        <td>21 Feb 2021</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>DBS</td>
+        <td>50</td>
+        <td>market</td>
+        <td>50</td>
+        <td>140</td>
+        <td>Rejected</td>
+        <td>21 Feb 2021</td>
+      </tr>
+    </table>
+
+    <br>
+    <label for="Execution Qty">Execution Qty</label><br>
+    <input type="text">
+    <br><br>
+
+    <label for="Execution Price">Execution Price</label><br>
+    <input type="text">
+<br>
+<br>
+    <input type="button" name="ExecuteOrders"  value="Execute Orders">
+
+</body>
+</center>
+</html>
