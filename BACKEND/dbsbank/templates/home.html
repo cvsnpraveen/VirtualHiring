@@ -1,0 +1,60 @@
+<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Book Order</title>
+  </head>
+  <body>
+    <center>
+        <div>
+          <label><b>Search Stock</b></label>
+          <select name="ordername">
+            {% for i in stock %}
+            <option value="{{ i.id }}">{{ i.stockName }}</option>
+            {% endfor %}
+          </select>
+        </div><br>
+    </div>
+    <div>
+      <label><b>Order Type</b></label>
+      <select id="ordertype" name="ordertype" onfocusout="myFunction()">
+        <option value="Limit">Limit</option>
+        <option value="Market">Market</option>
+        
+      </select>
+    </div><br>
+    <div>
+      
+    <label for="Price" id="pricelable"><b>Price</b></label>
+  <input type="text" placeholder="price" name="price" required id="price">
+  </div>
+  <br>
+  <div>
+  <label for="Quantity"><b>Quantity</b></label>
+  <input type="text" placeholder="Quantity" name="orderqty" required>
+  </div>
+  <br>
+
+</div>   
+        <div class="col">
+          <button type="submit">Place Order</button>
+        </div>
+      </div>
+  </center>
+</form>
+
+<br><br><br>
+    </body>
+    <script>
+      function myFunction(){
+      var t=document.getElementById("ordertype");
+      if(t=="Market")
+      {
+        document.getElementById("pricelabel").style.visibility = "hidden";
+        document.getElementById("price").style.visibility = "hidden";
+      }
+    }
+    </script>
+  </html>
