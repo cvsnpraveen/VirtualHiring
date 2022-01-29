@@ -1,0 +1,74 @@
+<html>
+    <head><title>Admin Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+</head>
+<script>
+    function openWin() {
+      window.open("admin.html");
+    }
+    </script>
+    <body>
+        <img src="dbs.png">
+        <div class="form">
+        <form id="frm">
+        <button id="b1" value="Open Window" onclick="openWin()"  style="background-color: firebrick;" >OPEN MARKET&nbsp;&nbsp;</button>
+        <button id="b1"  style="background-color: firebrick;">CLOSE MARKET</button><br><br><br><br>
+        <u style="color: white;">Select Stock </u>&nbsp;&nbsp;<select name="stock" id="qt" style="color: white;">
+        <option value="DBS">DBS</option>
+        <option value="AAA">AAA</option>
+        <option value="BBB">BBB</option>
+        <option value="CCC">CCC</option>
+        </select><br><br>
+        <b>
+        <u style="color: white;">From Date</u> &nbsp;&nbsp;<input id="qt" type="date" name="from" style="color: white;"><br><br>
+        <u style="color: white;">To Date</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="qt" type="date" name="to" style="color: white;"></b><br><br>
+        <button id="bt" onclick="orders.js">Show Orders</button><br><br><br>
+        <table style=" border: 2px solid white;" >
+            <tr style="background-color: firebrick; color: white ; border: 1px solid white;"> 
+              <th>S.no</th>
+              <th>stock name</th>
+              <th>Order Qty</th>
+              <th>Order type</th>
+              <th>Executed Qty</th>
+              <th>Price</th>
+              <th>order status</th>
+              <th>order date</th>
+            </tr>
+            <tr style="background-color: pink;border: 1px solid white;">
+                <td class="hello">1</td>
+                <td>DBS</td>
+                <td>50</td>
+                <td>limit</td>
+                <td>0</td>
+                <td>150</td>
+                <td>PLACED</td>
+                <td>21 Fed 21</td>
+            </tr>
+            <tr style="background-color:snow;border: 1px solid white;"> 
+                <td>2</td>
+                <td>DBS</td>
+                <td>50</td>
+                <td>market</td>
+                <td>0</td>
+                <td></td>
+                <td>PLACED</td>
+                <td>21 Fed 21</td>
+            </tr><tr style="background-color: pink;border: 1px solid white;">
+                <td>3</td>
+                <td>DBS</td>
+                <td>50</td>
+                <td>limit</td>
+                <td>0</td>
+                <td>140</td>
+                <td>PLACED</td>
+                <td>21 Fed 21</td>
+            </tr>
+          </table><br><br><br>
+        <b><u style="color:white">Execution Quantity</u>&nbsp;&nbsp;<input id="qt" type="number" min=0 name="no"><br><br>
+        <u style="color: white;">Execution Price</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="qt" type="number" min=0 name="no"></b><br><br>
+        <u style="color: white;">Execute Orders</u>
+    </form>
+    </div>
+    </body>
+</html>
