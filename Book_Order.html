@@ -3,7 +3,7 @@
 <head>
 <title>Book Order</title>
 </head>
-<body backgroung-image:url(C:\Users\madhu\Downloads\image1)>
+<body>
     <p style="font-size: 20px;">Search Stock:</p>
     <select>
         <option value=””>DBS</option>
@@ -11,17 +11,18 @@
         <option value=””>DBS2</option>
         <option value=””>DBS3</option>
     </select>
-    <p style="font-size: 20px;">Order Type:</p>
-    <input type="radio" id="Limit"value="LIMIT">
-        <label for="aLimit">LIMIT</label><br>
-    <input type="radio" id="Market"value="MARKET">
-        <label for="Market">MARKET</label><br>
-        <label style="font-size: 20px;">Price: </label><br>
-        <input type="text" placeholder="Enter Price" name="Price" required><br>
-        <label style="color:font-size: 20px;">Quantity: </label><br>
-        <input type="text" placeholder="Enter Quantity" name="Quantity" required><br><br>  
-        <form method="POST" action="adminscreen3.html">  
-            <button type="submit">Place Order</button>
-        </form> 
+    <p>Order Type</p>
+    <form>
+       <input type="radio" name="order type" value="limit">LIMIT
+       <br>
+       <input type="radio" name="order type" value="market">MARKET
+    </form>
+    <label style="font-size: 20px;">Price: </label><br>
+    <input type="text" placeholder="Enter Price" name="Price" required><br>
+    <label style="color:font-size: 20px;">Quantity: </label><br>
+    <input type="text" placeholder="Enter Quantity" name="Quantity" required><br><br>  
+    <form method="POST" action="adminscreen3.html">  
+        <button type="submit">Place Order</button>
+    </form> 
 </body>
 </html>
